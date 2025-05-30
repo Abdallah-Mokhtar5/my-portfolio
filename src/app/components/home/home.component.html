@@ -1,0 +1,283 @@
+<!-- Enhanced Home Component HTML -->
+<div class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+  
+  <!-- Enhanced Hero Section -->
+  <section class="container mx-auto px-6 py-20 md:py-32">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-12 md:mb-0">
+        <!-- Animated greeting -->
+        <div class="mb-6">
+          <p class="text-blue-400 text-lg font-medium animate-fade-in-up" style="animation-delay: 0.2s; opacity: 0;">
+            Hello, Welcome to my Portfolio
+          </p>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.4s; opacity: 0;">
+          Hi, I'm <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Abdallah Mokhtar</span>
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl text-gray-300 mb-8 animate-fade-in-up" style="animation-delay: 0.6s; opacity: 0;">
+          Full Stack .NET Developer
+        </h2>
+        
+        <!-- Enhanced tech stack badges -->
+        <div class="flex flex-wrap gap-2 mb-6 animate-fade-in-up" style="animation-delay: 0.8s; opacity: 0;">
+          <span class="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
+            .NET Core
+          </span>
+          <span class="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
+            Angular
+          </span>
+          <span class="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
+            TypeScript
+          </span>
+          <span class="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
+            C#
+          </span>
+        </div>
+        
+        <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed animate-fade-in-up" style="animation-delay: 1s; opacity: 0;">
+          I build robust, scalable web applications using Angular, .NET Core, and cloud technologies.
+          Passionate about clean code, innovative solutions, and delivering exceptional user experiences.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 1.2s; opacity: 0;">
+          <a routerLink="/contact" class="group relative bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-center">
+            <span class="relative z-10">Contact Me</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+          <a routerLink="/projects" class="group border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 text-center hover:shadow-lg">
+            View Projects
+            <svg class="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Enhanced profile section -->
+      <div class="md:w-1/2 flex justify-center animate-fade-in-up" style="animation-delay: 0.6s; opacity: 0;">
+        <div class="relative">
+          <!-- Animated background circles -->
+          <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-blue-400 to-gray-500 rounded-full opacity-20 absolute -top-6 -left-6 animate-pulse"></div>
+          <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-r from-blue-400 to-gray-500 rounded-full opacity-10 absolute -top-12 -left-12 animate-pulse" style="animation-delay: 1s;"></div>
+          
+          <!-- Main profile circle -->
+          <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-blue-400 to-purple-500 p-1 relative z-10 group hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full rounded-full overflow-hidden bg-gray-800">
+              <img src="https://via.placeholder.com/400x400/1f2937/60a5fa?text=Your+Photo" alt="Profile" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+          </div>
+          
+          <!-- Floating elements -->
+          <div class="w-32 h-32 bg-gradient-to-r from-pink-400 to-red-500 rounded-full opacity-20 absolute -bottom-6 -right-6 animate-pulse" style="animation-delay: 0.5s;"></div>
+          <div class="w-16 h-16 bg-blue-400 rounded-full opacity-30 absolute top-10 -right-8 animate-bounce" style="animation-delay: 2s;"></div>
+          
+          <!-- Floating tech icons -->
+          <div class="absolute -top-4 right-8 bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 animate-float">
+            <span class="text-blue-400 font-bold text-sm">TS</span>
+          </div>
+          <div class="absolute bottom-4 -left-8 bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 animate-float-delayed">
+            <span class="text-purple-400 font-bold text-sm">.NET</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Section -->
+  <!-- <section class="py-16 px-6 bg-white/5 backdrop-blur-sm border-y border-white/10">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center group hover:scale-105 transition-transform duration-300">
+          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2 counter" data-target="50">0</div>
+          <div class="text-gray-400 text-sm md:text-base">Projects Completed</div>
+        </div>
+        <div class="text-center group hover:scale-105 transition-transform duration-300">
+          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2 counter" data-target="3">0</div>
+          <div class="text-gray-400 text-sm md:text-base">Years Experience</div>
+        </div>
+        <div class="text-center group hover:scale-105 transition-transform duration-300">
+          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">100%</div>
+          <div class="text-gray-400 text-sm md:text-base">Client Satisfaction</div>
+        </div>
+        <div class="text-center group hover:scale-105 transition-transform duration-300">
+          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">24/7</div>
+          <div class="text-gray-400 text-sm md:text-base">Available</div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- What I Do Section -->
+  <section class="py-20 px-6">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          What I Do
+        </h3>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+          Specializing in full-stack development with modern technologies and best practices
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Frontend Development -->
+        <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-4">Frontend Development</h4>
+          <p class="text-gray-200 mb-6">Creating responsive, interactive user interfaces with Angular, TypeScript, and modern CSS frameworks.</p>
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li>• Angular & TypeScript</li>
+            <li>• Responsive Design</li>
+            <li>• Component Architecture</li>
+            <li>• State Management</li>
+          </ul>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-4">Backend Development</h4>
+          <p class="text-gray-200 mb-6">Building robust APIs and server-side applications using .NET Core, C#, and cloud technologies.</p>
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li>• .NET Core & C#</li>
+            <li>• RESTful APIs</li>
+            <li>• Database Design</li>
+            <li>• Cloud Integration</li>
+          </ul>
+        </div>
+
+        <!-- Full Stack Solutions -->
+        <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-4">Full Stack Solutions</h4>
+          <p class="text-gray-200 mb-6">End-to-end application development from concept to deployment with modern DevOps practices.</p>
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li>• Complete Web Applications</li>
+            <li>• Database Management</li>
+            <li>• Cloud Deployment</li>
+            <li>• Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 px-6 bg-gradient-to-r from-blue-600/10 to-purple-600/10">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ready to Start Your Next Project?
+      </h3>
+      <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        Let's collaborate and turn your ideas into powerful, scalable web applications.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a routerLink="/contact" class="group relative bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <span class="relative z-10">Get In Touch</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+        <a routerLink="/projects" class="group border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+          View My Work
+          <svg class="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  /* Enhanced animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes counter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+  
+  /* Gradient text animation */
+  .bg-clip-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<script>
+  // Counter animation for stats
+  document.addEventListener('DOMContentLoaded', function() {
+    const counters = document.querySelectorAll('.counter');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          let current = 0;
+          const increment = target / 50;
+          
+          const updateCounter = () => {
+            if (current < target) {
+              current += increment;
+              counter.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          
+          updateCounter();
+          observer.unobserve(counter);
+        }
+      });
+    });
+    
+    counters.forEach(counter => observer.observe(counter));
+  });
+</script>

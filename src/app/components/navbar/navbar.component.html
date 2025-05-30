@@ -1,0 +1,77 @@
+<!-- Navbar Component HTML -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-white/10">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo/Brand -->
+      <a routerLink="/" class="group flex items-center space-x-3 mx-8">
+        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+          <span class="text-white font-bold text-lg">AM</span>
+        </div>
+        <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Abdallah Mokhtar
+        </span>
+      </a>  
+          <!-- Hamburger button (visible on small screens) -->
+    <button
+      class="md:hidden text-2xl text-gray-200 focus:outline-none hover:cursor-pointer"
+      (click)="toggleMenu()"
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-10 px-20">
+        <a routerLink="/"
+           routerLinkActive="text-blue-400 border-b-2 border-blue-400"
+           [routerLinkActiveOptions]="{exact: true}"
+           class="text-gray-300 hover:text-blue-400 transition-colors duration-300 py-2 border-b-2 border-transparent hover:border-blue-400/50">
+          Home
+        </a>
+        <a routerLink="/about"
+           routerLinkActive="text-blue-400 border-b-2 border-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition-colors duration-300 py-2 border-b-2 border-transparent hover:border-blue-400/50">
+          About
+        </a>
+        <a routerLink="/projects"
+           routerLinkActive="text-blue-400 border-b-2 border-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition-colors duration-300 py-2 border-b-2 border-transparent hover:border-blue-400/50">
+          Projects
+        </a>
+        <a routerLink="/contact"
+           routerLinkActive="text-blue-400 border-b-2 border-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition-colors duration-300 py-2 border-b-2 border-transparent hover:border-blue-400/50">
+          Contact
+        </a>
+       
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden px-6 pb-4"
+    *ngIf="menuOpen"
+  >
+    <ul class="flex flex-col gap-4 font-medium">
+      <li><a routerLink="/" routerLinkActive="text-indigo-600 font-semibold" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300">Home</a></li>      <li><a routerLink="/about" routerLinkActive="text-indigo-600 font-semibold" (click)="closeMenu()" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300">About</a></li>
+      <li><a routerLink="/projects" routerLinkActive="text-indigo-600 font-semibold" (click)="closeMenu()" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300">Projects</a></li>
+      <li><a routerLink="/contact" routerLinkActive="text-indigo-600 font-semibold" (click)="closeMenu()" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<style>
+  /* Ensure smooth transitions */
+  .transition-all {
+    transition-property: all;
+  }
+ 
+  /* Gradient text animation */
+  .bg-clip-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+ 
+  /* Active link styles */
+  .router-link-active {
+    color: #60a5fa !important;
+  }
+</style>
