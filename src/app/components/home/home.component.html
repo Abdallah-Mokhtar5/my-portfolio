@@ -1,6 +1,6 @@
 <!-- Enhanced Home Component HTML -->
 <div class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-  
+
   <!-- Enhanced Hero Section -->
   <section class="container mx-auto px-6 py-20 md:py-32">
     <div class="flex flex-col md:flex-row items-center">
@@ -11,15 +11,15 @@
             Hello, Welcome to my Portfolio
           </p>
         </div>
-        
+
         <h1 class="text-4xl md:text-6xl font-bold leading-tight text-blue-100 mb-6 animate-fade-in-up" style="animation-delay: 0.4s; opacity: 0;">
           Hi, I'm <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Abdallah Mokhtar</span>
         </h1>
-        
+
         <h2 class="text-2xl md:text-3xl text-gray-300 mb-8 animate-fade-in-up" style="animation-delay: 0.6s; opacity: 0;">
           Full Stack Web Developer (.NET | Angular | Nintex K2)
         </h2>
-        
+
         <!-- Enhanced tech stack badges -->
         <div class="flex flex-wrap gap-2 mb-6 animate-fade-in-up" style="animation-delay: 0.8s; opacity: 0;">
           <span class="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
@@ -35,12 +35,12 @@
             C#
           </span>
         </div>
-        
+
         <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed animate-fade-in-up" style="animation-delay: 1s; opacity: 0;">
           I build robust, scalable web applications using Angular, .NET Core, and cloud technologies.
           Passionate about clean code, innovative solutions, and delivering exceptional user experiences.
         </p>
-        
+
         <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 1.2s; opacity: 0;">
           <a routerLink="/contact" class="group relative bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-center">
             <span class="relative z-10">Contact Me</span>
@@ -54,25 +54,25 @@
           </a>
         </div>
       </div>
-      
+
       <!-- Enhanced profile section -->
       <div class="md:w-1/2 flex justify-center animate-fade-in-up" style="animation-delay: 0.6s; opacity: 0;">
         <div class="relative">
           <!-- Animated background circles -->
           <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-blue-400 to-gray-500 rounded-full opacity-20 absolute -top-6 -left-6 animate-pulse"></div>
           <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-r from-blue-400 to-gray-500 rounded-full opacity-10 absolute -top-12 -left-12 animate-pulse" style="animation-delay: 1s;"></div>
-          
+
           <!-- Main profile circle -->
           <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-blue-400 to-purple-500 p-1 relative z-10 group hover:scale-105 transition-transform duration-300">
             <div class="w-full h-full rounded-full overflow-hidden bg-gray-800">
-              <img src="assets/images/personal-picture.jpeg" alt="Profile" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500">
+              <img src="assets/images/personal-picturen.jpeg" alt="Profile" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500">
             </div>
           </div>
-          
+
           <!-- Floating elements -->
           <div class="w-32 h-32 bg-gradient-to-r from-pink-400 to-red-500 rounded-full opacity-20 absolute -bottom-6 -right-6 animate-pulse" style="animation-delay: 0.5s;"></div>
           <div class="w-16 h-16 bg-blue-400 rounded-full opacity-30 absolute top-10 -right-8 animate-bounce" style="animation-delay: 2s;"></div>
-          
+
           <!-- Floating tech icons -->
           <div class="absolute -top-4 right-8 bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 animate-float">
             <span class="text-blue-400 font-bold text-sm">TS</span>
@@ -97,7 +97,7 @@
           Specializing in full-stack development with modern technologies and best practices
         </p>
       </div>
-      
+
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Frontend Development -->
         <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
@@ -190,36 +190,36 @@
       transform: translateY(0);
     }
   }
-  
+
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
   }
-  
+
   @keyframes counter {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  
+
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out forwards;
   }
-  
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-float-delayed {
     animation: float 6s ease-in-out infinite;
     animation-delay: 3s;
   }
-  
+
   /* Gradient text animation */
   .bg-clip-text {
     background-clip: text;
     -webkit-background-clip: text;
   }
-  
+
   /* Smooth scroll behavior */
   html {
     scroll-behavior: smooth;
@@ -230,7 +230,7 @@
   // Counter animation for stats
   document.addEventListener('DOMContentLoaded', function() {
     const counters = document.querySelectorAll('.counter');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -238,7 +238,7 @@
           const target = parseInt(counter.getAttribute('data-target'));
           let current = 0;
           const increment = target / 50;
-          
+
           const updateCounter = () => {
             if (current < target) {
               current += increment;
@@ -248,13 +248,13 @@
               counter.textContent = target;
             }
           };
-          
+
           updateCounter();
           observer.unobserve(counter);
         }
       });
     });
-    
+
     counters.forEach(counter => observer.observe(counter));
   });
 </script>
